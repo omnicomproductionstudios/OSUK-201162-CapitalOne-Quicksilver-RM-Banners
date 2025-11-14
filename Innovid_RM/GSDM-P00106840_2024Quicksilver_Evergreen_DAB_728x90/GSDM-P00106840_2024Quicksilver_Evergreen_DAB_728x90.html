@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="banner" class="bannerSize">
+      <!-- content -->
+      <ft-default clickaction="expand">
+        <div class="defaultBorder defaultSize"></div>
+        <div class="capOneLogo">
+          <img src="images/redSwoop.svg" id="redSwoop" alt="" />
+          <img src="images/capital.svg" id="capital" alt="Capital" />
+          <img src="images/one.svg" id="one" alt="One" />
+        </div>
+
+        <div class="mask">
+          <div class="shimmer" aria-hidden="true"></div>
+          <img
+            src="images/txt1a.svg"
+            id="txt1a"
+            alt="The perfect game plan to earn cash back"
+          />
+        </div>
+
+        <img
+          class="expandBtn"
+          src="images/expand_close_btn.svg"
+          alt="click to expand"
+        />
+
+        <div class="ctaCont" id="cta">
+          <img
+            src="images/rArrowCollapsed.svg"
+            id="rArrow"
+            alt="arrow point to the right"
+          />
+        </div>
+      </ft-default>
+
+      <ft-expand customclose>
+        <div class="expCapOneLogo">
+          <img src="images/redSwoop.svg" id="redSwoop" alt="" />
+          <img src="images/capital.svg" id="capital" alt="Capital" />
+          <img src="images/one.svg" id="one" alt="One" />
+        </div>
+
+        <div class="exp-mask">
+          <div class="exp-shimmer" aria-hidden="true"></div>
+          <img
+            src="images/txt2a.svg"
+            id="txt2a"
+            alt="Earn unlimited 2x miles on every purchase."
+          />
+        </div>
+
+        <div class="ctaExpCont" id="ctaExp">
+          <div class="ctaBtn">
+            <img
+              src="images/ctaTxt.svg"
+              id="ctaTxt"
+              alt="Learn more. Visit capitalone.com"
+            />
+            <img src="images/rArrow.svg" id="rArrowExp" alt="" />
+          </div>
+        </div>
+
+        <div class="quicksilverCardContainer">
+          <div class="card-inner">
+            <div class="front">
+              <img
+                id="quicksilverCard"
+                src="images/quicksilverCard.png"
+                alt="Capital One quicksilver Card"
+              />
+              <div class="cardGlimmer"></div>
+            </div>
+            <div class="back"></div>
+          </div>
+          <div class="card-inner-sway">
+            <div class="front">
+              <img
+                id="quicksilverCard-sway"
+                src="images/quicksilverCard.png"
+                alt="Capital One quicksilver Card"
+              />
+              <div class="cardGlimmer-sway"></div>
+            </div>
+          </div>
+          <div class="card-shadow">
+            <div class="shadow-inner"></div>
+          </div>
+        </div>
+
+        <div class="clickthrough expandSize" clicktag="1"></div>
+        <div class="videoCont">
+          <ft-video id="video1" name="video1"></ft-video>
+          <ft-video-controls
+            class="vidControls"
+            for="video1"
+          ></ft-video-controls>
+          <img
+            id="vidPoster"
+            src="images/poster.jpg"
+            alt="video thumbnail image with a white play button in the center."
+          />
+        </div>
+        <ft-click id="close" clickaction="contract">
+          <p>
+            <img
+              class="closeBtn"
+              src="images/expand_close_btn.svg"
+              alt="click to expand"
+            />
+          </p>
+        </ft-click>
+        <div class="defaultBorder expandSize"></div>
+      </ft-expand>
+      <div id="cover" class="defaultSize"></div>
+      <!-- scripts -->
+      <script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+      <script src="https://cdn.flashtalking.com/frameworks/js/gsap/3.1.1/gsap.min.js"></script>
+      <script src="https://cdn.flashtalking.com/frameworks/js/gsap/3.1.1/EasePack.min.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
