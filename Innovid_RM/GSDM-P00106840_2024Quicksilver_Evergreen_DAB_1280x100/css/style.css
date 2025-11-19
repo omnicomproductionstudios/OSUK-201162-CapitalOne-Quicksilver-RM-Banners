@@ -161,11 +161,12 @@ ft-expand{
 }
 
 .expCapOneLogo{
-  height: 52px;
-  left: 787px;
-  top: 22px;
-  width: 147px;
-  z-index: 399;
+      height: 52px;
+    left: 787px;
+    top: 22px;
+    width: 147px;
+    z-index: 399;
+    transform: scale(1.04);
 }
 
 .expCapOneLogo #redSwoop{
@@ -304,96 +305,92 @@ ft-expand{
 }
 
 /* -----Expanded Card----- */
-.quicksilverCardContainer{
-  height: 182px;
-  left: 790px;
-  perspective: 1000px;
-  top: 207px;
-  width: 288px;
-}
-
-.card-inner{
-  backface-visibility: hidden;
-  height: 182px;
-  transform: rotateY(-15deg);
-  transform-style: preserve-3d;
-  width: 288px;
-  z-index: 2;
-}
-
-.card-inner .front,
-.card-inner .back,
-.card-inner #quicksilverCard{
-  border-radius: 10px;
-  height: 182px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 288px;
-}
-
-.card-inner .front .cardGlimmer{
-  height: 100%;
-  background:radial-gradient(circle at 50% 20%, rgba(255,255,255,0.5) 4%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0) 35%);
-  opacity: 0.2;
-  left: 0;
-  top: 0;
-  left: -50%;
-  width: 200%;
-}
-
-.card-inner .back{
-  background-color: #333333;
-  padding: 0;
-  margin: 0;
-  transform: rotateY(180deg);
-}
-
-.card-inner-sway{
-  border-radius: 10px;
-  height: 182px;
-  left: 0;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 288px;
-}
-
-.card-inner-sway .front,
-.card-inner-sway #quicksilverCard-sway{
-  height: 182px;
-  left: 0;
-  width: 288px;
-}
-
-.card-inner-sway .cardGlimmer-sway{
-  height: 100%;
-  background:radial-gradient(circle at 50% 20%, rgba(255,255,255,0.3) 4%, rgba(255,255,255,0.1) 20%, rgba(255,255,255,0) 35%);
-  opacity: 0.2;
-  top: 0;
-  left: -50%;
-  width: 200%;
-}
-
-.card-shadow{
-  backface-visibility: visible;
-  filter: blur(5px);
-  height: 182px;
-  perspective: 1000px;
-  opacity: 0.3;
-  top: 207px;
-  transform-style: preserve-3d;
-  width: 288px;
-  z-index: 1;
-}
-
-.shadow-inner{
-  background: linear-gradient(180deg, rgba(0,0,0,1) 2%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
-  border-radius: 10px;
-  height: 182px;
-  transform-origin: top center;
-  transform: rotateX(70deg) rotateZ(180deg);
-  transform-style: preserve-3d;
-  left: 0%;
-  width: 100%;
-}
+.quicksilverCardContainer {
+            height: 182px;
+    left: 790px;
+    perspective: 1000px;
+    top: 206px;
+    width: 288px;
+      }
+      .quicksilverCardContainer .card-inner {
+        backface-visibility: hidden;
+        height: inherit;
+        transform: rotateY(-15deg);
+        transform-style: preserve-3d;
+        width: inherit;
+        z-index: 2;
+      }
+      .quicksilverCardContainer .card-inner #quicksilverCard,
+      .quicksilverCardContainer .card-inner .back,
+      .quicksilverCardContainer .card-inner .front {
+        border-radius: 10px;
+        height: inherit;
+        overflow: hidden;
+        position: absolute;
+        width: inherit;
+        left: 0px;
+      }
+      .quicksilverCardContainer .card-inner .cardGlimmer {
+        height: 100%;
+        background: radial-gradient(
+          circle at 50% 20%,
+          #fff 4%,
+          rgba(255, 255, 255, 0.3) 20%,
+          rgba(255, 255, 255, 0) 35%
+        );
+        opacity: 0.2;
+        top: 0;
+        left: -50%;
+        width: 200%;
+      }
+      .quicksilverCardContainer .card-inner-sway {
+        border-radius: 10px;
+        height: 182px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 288px;
+      }
+      .quicksilverCardContainer .card-inner-sway #quicksilverCard-sway,
+      .quicksilverCardContainer .card-inner-sway .front {
+        height: inherit;
+        width: inherit;
+        left: 0px;
+      }
+      .quicksilverCardContainer .card-inner-sway .cardGlimmer-sway {
+        height: 100%;
+        background: radial-gradient(
+          circle at 50% 20%,
+          rgba(255, 255, 255, 0.3) 4%,
+          rgba(255, 255, 255, 0.1) 20%,
+          rgba(255, 255, 255, 0) 35%
+        );
+        opacity: 0.2;
+        top: 0;
+        left: -50%;
+        width: 200%;
+      }
+      .quicksilverCardContainer .card-shadow {
+        backface-visibility: visible;
+        filter: blur(1px);
+        height: inherit;
+        perspective: 1000px;
+        opacity: 0.5;
+        top: 181px;
+        width: inherit;
+        z-index: 0;
+      }
+      .quicksilverCardContainer .card-shadow .shadow-inner {
+        background: linear-gradient(
+          180deg,
+          #4f5b67 0,
+          rgba(79, 91, 103, 0.3) 15%,
+          rgba(79, 91, 103, 0) 25%
+        );
+        border-radius: 15px;
+        height: inherit;
+        transform-origin: top center;
+        transform-style: preserve-3d;
+        left: 0;
+        width: 100%;
+      }
